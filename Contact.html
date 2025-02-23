@@ -74,7 +74,7 @@
                 <h2 class="u-align-left u-text u-text-1">Neem contact met ons op</h2>
                 <p class="u-align-left u-text u-text-2">U bent altijd welkom om contact met ons op te nemen. Onze klantenservice is bereikbaar van ma t/m vr van 09.00 uur tot 20.00 uur. en za–zo 10.00 uur–18.00 uur (GMT+3). Wij horen graag van u!</p>
                 <div class="u-expanded-width u-form u-form-1">
-                  <form action="https://formsubmit.co/robbe.vanherpe@outlook.com" method="POST" class="u-clearfix u-form-spacing-20 u-form-vertical u-inner-form" style="padding: 10px;">
+                  <form id="contact-form" action="https://formsubmit.co/robbe.vanherpe@outlook.com" method="POST" class="u-clearfix u-form-spacing-20 u-form-vertical u-inner-form" style="padding: 10px;">
                     <div class="u-form-group u-form-name u-label-none">
                         <label for="name-3434" class="u-label">Name</label>
                         <input type="text" placeholder="Enter your Name" id="name-3434" name="name" class="u-border-none u-grey-10 u-input u-input-rectangle" required>
@@ -94,11 +94,16 @@
                         <button type="submit" class="u-border-none u-btn u-btn-submit u-button-style u-custom-color-1 u-btn-1">Send Message</button>
                     </div>
                 
-                    <div class="u-form-send-message u-form-send-success">Thank you! Your message has been sent.</div>
-                    <div class="u-form-send-error u-form-send-message">Unable to send your message. Please fix errors then try again.</div>
+                    <!-- Success Message (Hidden Initially) -->
+                    <div id="success-message" class="u-form-send-message u-form-send-success" style="display: none;">
+                        Thank you! Your message has been sent.
+                    </div>
                 
-                    <input type="hidden" name="_captcha" value="false"> <!-- Disable reCAPTCHA if needed -->
-                    <input type="hidden" name="_next" value="https://yourdomain.com/thank-you"> <!-- Redirect after submission -->
+                    <div id="error-message" class="u-form-send-error u-form-send-message" style="display: none;">
+                        Unable to send your message. Please try again.
+                    </div>
+                
+                    <input type="hidden" name="_captcha" value="false"> <!-- Disable reCAPTCHA -->
                 </form>
                 
                 </div>
@@ -132,4 +137,30 @@
         </p>
       </div></footer>
   
-</body></html>
+</body>
+<script>
+  document.getElementById("contact-form").addEventListener("submit", function(event) {
+      event.preventDefault(); // Stop normal form submission
+  
+      let formData = new FormData(this);
+  
+      fetch(this.action, {
+          method: "POST",
+          body: formData
+      })
+      .then(response => {
+          if (response.ok) {
+              document.getElementById("success-message").style.display = "block";
+              document.getElementById("error-message").style.display = "none";
+              this.reset(); // Clear form fields after successful submission
+          } else {
+              throw new Error("Form submission failed");
+          }
+      })
+      .catch(error => {
+          document.getElementById("success-message").style.display = "none";
+          document.getElementById("error-message").style.display = "block";
+      });
+  });
+  </script>
+</html>
