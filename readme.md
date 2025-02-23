@@ -1,5 +1,4 @@
-using formsubmit for mails
-
+using formsubmit for mails:
 ```html
 <form action="https://formsubmit.co/your-email@example.com" method="POST">
     <label>Name:</label>
@@ -13,4 +12,9 @@ using formsubmit for mails
 
     <button type="submit">Send Message</button>
 </form>
+```
+
+testen site:
+```bash
+python -m http.server 8000 
 ```
