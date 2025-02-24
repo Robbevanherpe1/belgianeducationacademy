@@ -27,8 +27,7 @@ Our programs are designed to provide comprehensive insights into Belgian educati
 
 This is a **static site** built with:
 - **HTML, CSS, JavaScript** for the frontend.
-- **Niceform** for form styling and improved UX.
-- **Tally** for form submissions and enrollment handling.
+- **Tally-formsubmit** for form submissions and enrollment handling.
 - **google docs** for storing the submissions of enrollement
 
 ## 🛠️ Local Development
