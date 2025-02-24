@@ -1,6 +1,6 @@
  .u-section-1 {
   background-image: none;
-  min-height: 1003px;
+  min-height: 1143px;
 }
 
 .u-section-1 .u-shape-1 {
@@ -76,7 +76,7 @@
 
 @media (max-width: 1199px) {
    .u-section-1 {
-    min-height: 999px;
+    min-height: 1075px;
   }
 
   .u-section-1 .u-shape-1 {
