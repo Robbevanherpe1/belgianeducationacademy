@@ -37,3 +37,14 @@ forms fix:
     <input type="hidden" name="_captcha" value="false">
 </form>
 ```
+
+
+use Tally form
+
+```html
+<iframe data-tally-src="https://tally.so/embed/3xlzQy?hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="1661" frameborder="0" marginheight="0" marginwidth="0" title="Enroll courses"></iframe>
+<script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
+```
+
+link to google cheat tally form:
+https://docs.google.com/spreadsheets/d/107DPm2YwoWerqYcqLVBgUzXqFl8ShYxr4gS7swxoOXM
