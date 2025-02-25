@@ -23,12 +23,12 @@ Our programs are designed to provide comprehensive insights into Belgian educati
 - **Local Expertise**: Our courses are led by professional local teachers, ensuring an authentic and enriching experience.
 - **Transportation**: All necessary transportation during the course, including train journeys, is provided.
 
-## 🏗️ Tech Stack
+## 🏠 Tech Stack
 
 This is a **static site** built with:
 - **HTML, CSS, JavaScript** for the frontend.
 - **Tally-formsubmit** for form submissions and enrollment handling.
-- **google docs** for storing the submissions of enrollement
+- **Google Docs** for storing enrollment submissions.
 
 ## 🛠️ Local Development
 
@@ -48,3 +48,6 @@ For more information or any inquiries:
 - **Phone**: +32 123 45 67 89
 
 We look forward to welcoming you to Belgium and embarking on this educational journey together! 🚀
+
+[Visit our website](https://robbevanherpe1.github.io/belgianeducationacademy/)
+
