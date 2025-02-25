@@ -12,8 +12,8 @@ Our programs are designed to provide comprehensive insights into Belgian educati
 
 ## 📝 Enrollment Process
 
-1. **Secure Funding**: Apply for KA1 funding through your national agency. This funding typically covers travel costs, accommodation, and the course fee of €440.
-2. **Enroll**: Once your grant is approved, complete our [enrollment form](https://tally.so/) via Tally. We will contact you as soon as we have enough participants for your chosen course.
+1. **Secure Funding**: Apply for KA1 funding through your national agency. This funding typically covers travel costs, accommodation, and the course fee of €480.
+2. **Enroll**: Once your grant is approved, complete our [enrollment form]([https://tally.so/](https://tally.so/r/3xlzQy)) via Tally. We will contact you as soon as we have enough participants for your chosen course.
 
 ## 🎓 What to Expect
 
