@@ -29,6 +29,7 @@ This is a **static site** built with:
 - **HTML, CSS, JavaScript** for the frontend.
 - **Tally-formsubmit** for form submissions and enrollment handling.
 - **Google Docs** for storing enrollment submissions.
+- **make and trello** for managing enrollment submissions.
 
 ## 🛠️ Local Development
 
